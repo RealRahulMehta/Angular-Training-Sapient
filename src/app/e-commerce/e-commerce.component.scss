@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .filter-wrapper {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    .view-wrapper {
+      padding-right: 15px;
+    }
+  }
+
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+
+    .product-wrapper {
+      height: 200px;
+      border: 1px solid;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .grid-view {
+      width: 25%;
+    }
+
+    .list-view {
+      width: 50%;
+    }
+  }
+}
