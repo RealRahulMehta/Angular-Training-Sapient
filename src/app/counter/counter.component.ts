@@ -70,14 +70,10 @@ export class CounterComponent implements OnInit {
 
   updateButtonAction(action: string) {
     if (action === 'start') {
-      const startArray = this.timeStampArray.filter((actionObj: Timestamp) => {
-        return actionObj.type === 'start';
-      });
+      const startArray = this.timeStampArray.filter((actionObj: Timestamp) =>  actionObj.type === 'start');
       this.startCount = startArray.length;
-    } else if (action === 'pause') {
-      const pauseArray = this.timeStampArray.filter((actionObj: Timestamp) => {
-        return actionObj.type === 'pause';
-      });
+    } else {
+      const pauseArray = this.timeStampArray.filter((actionObj: Timestamp) => actionObj.type === 'pause');
       this.pauseCount = pauseArray.length;
       this.pauseArray = pauseArray;
     }

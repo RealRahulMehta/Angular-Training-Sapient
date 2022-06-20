@@ -18,6 +18,16 @@ const routes: Routes = [
     loadChildren: () =>
       import('./counter/counter.module').then((m) => m.CounterModule),
   },
+  {
+    path: 'student',
+    loadChildren: () =>
+      import('./student/student.module').then((m) => m.StudentModule),
+  },
+  {
+    path: 'dynamic-div',
+    loadChildren: () =>
+      import('./dynamic-div/dynamic-div.module').then((m) => m.DynamicDivModule),
+  },
 ];
 
 @NgModule({

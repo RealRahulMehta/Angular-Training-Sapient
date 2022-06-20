@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-click-log',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClickLogComponent implements OnInit {
 
+  @Input() pauseCount = 0;
+	@Input() startCount = 0;
   constructor() { }
 
   ngOnInit(): void {

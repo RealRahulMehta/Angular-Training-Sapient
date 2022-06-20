@@ -10,7 +10,18 @@
       (start) = "handleStartChange($event)"
       (pause) = "handlePauseChange()"
       (reset) = "handleResetChange()"
+      [pauseArray]="pauseArray"
       >
       </app-timer-limit>
     </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-6 container-div log-container custom-scroll">
+        <app-timestamp [actionArray]="timeStampArray"></app-timestamp>
+      </div>
+      <div class="col-sm-12 col-md-6 container-div">
+        <app-click-log [pauseCount]="pauseCount" [startCount]="startCount"></app-click-log>
+      </div>
+    </div>
+    
   </div>

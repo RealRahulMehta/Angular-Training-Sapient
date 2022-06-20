@@ -7,4 +7,9 @@
         </button>
         <button class="btn btn-secondary" (click)="resetTimer()">Reset</button>
     </div>
+
+
+  <div class="pause-log-container custom-scroll">
+    <h6 *ngFor="let pause of pauseArray">Paused at {{pause.value}}</h6>
+  </div>
 </div>

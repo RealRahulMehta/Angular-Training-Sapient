@@ -1,0 +1,92 @@
+{
+    "students": [
+      {
+        "name": "Rahul Mehta",
+        "class": 1,
+        "section": "B",
+        "sub1": 53,
+        "sub2": 96,
+        "sub3": 75
+      },
+      {
+        "name": "Ansh Gupta",
+        "class": 5,
+        "section": "A",
+        "sub1": 72,
+        "sub2": 52,
+        "sub3": 51
+      },
+      {
+        "name": "Manish Singh",
+        "class": 5,
+        "section": "F",
+        "sub1": 37,
+        "sub2": 26,
+        "sub3": 74
+      },
+      {
+        "name": "Sarthak Sharma",
+        "class": 2,
+        "section": "D",
+        "sub1": 6,
+        "sub2": 9,
+        "sub3": 79
+      },
+      {
+        "name": "Dheeraj Dhiman",
+        "class": 7,
+        "section": "B",
+        "sub1": 69,
+        "sub2": 48,
+        "sub3": 69
+      },
+      {
+        "name": "Manas Bassi",
+        "class": 6,
+        "section": "F",
+        "sub1": 89,
+        "sub2": 46,
+        "sub3": 17
+      },
+      {
+        "name": "Samay Raina",
+        "class": 8,
+        "section": "D",
+        "sub1": 72,
+        "sub2": 44,
+        "sub3": 76
+      },
+      {
+        "name": "Akash Gupta",
+        "class": 8,
+        "section": "B",
+        "sub1": 33,
+        "sub2": 55,
+        "sub3": 87
+      },
+      {
+        "name": "Arush Chauhan",
+        "class": 9,
+        "section": "C",
+        "sub1": 76,
+        "sub2": 6,
+        "sub3": 15
+      },
+      {
+        "name": "Sachin Awasthi",
+        "class": 5,
+        "section": "D",
+        "sub1": 49,
+        "sub2": 11,
+        "sub3": 21
+      },
+      {
+        "name": "Ganesh Gajre",
+        "class": 4,
+        "section": "D",
+        "sub1": 100,
+        "sub2": 46,
+        "sub3": 4
+      }
+    ]
+  }
