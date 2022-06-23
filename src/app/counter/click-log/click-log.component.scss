@@ -1,0 +1,8 @@
+.log-container {
+    display: flex;
+    width: 540px;
+
+    .pause-container, .start-container {
+        padding: 10px;
+    }
+}

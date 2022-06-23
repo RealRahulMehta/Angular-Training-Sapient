@@ -1,0 +1,25 @@
+.container {
+    padding: 10px;
+    
+  .btn-container {
+    margin-top: 10px;
+
+    .btn {
+      margin-right: 7px;
+    }
+  }
+
+  .log-container {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    overflow: auto;
+    margin-top: 10px;
+    color: black;
+    padding: 10px;
+  }
+
+  label {
+    margin-right: 10px;
+  }
+}

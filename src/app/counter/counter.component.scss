@@ -1,0 +1,25 @@
+.container {
+  border: 1px solid;
+
+  .timer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    .timer-count,
+    .timer-limit {
+      width: 49%;
+      border: 1px solid;
+    }
+  }
+
+  .log-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .timestamp-wrapper,
+    .count-wrapper {
+      width: 49%;
+    }
+  }
+}

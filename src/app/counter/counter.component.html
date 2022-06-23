@@ -1,27 +1,26 @@
-<div class="row">
-    <div class="col-sm-12 col-md-6 container-div">
+<div class="container">
+  <div class="timer-wrapper">
+    <div class="timer-count">
       <app-timer>
         <h1 class="text-center" id="counter">{{startTimer}}</h1>
       </app-timer>
-
     </div>
-    <div class="col-sm-12 col-md-6 container-div input-container">
-      <app-timer-limit
-      (start) = "handleStartChange($event)"
-      (pause) = "handlePauseChange()"
-      (reset) = "handleResetChange()"
-      [pauseArray]="pauseArray"
-      >
+
+    <div class="timer-limit">
+      <app-timer-limit (start)="handleStartChange($event)" (pause)="handlePauseChange()" (reset)="handleResetChange()"
+        [pauseArray]="pauseArray">
       </app-timer-limit>
     </div>
-
-    <div class="row">
-      <div class="col-sm-12 col-md-6 container-div log-container custom-scroll">
-        <app-timestamp [actionArray]="timeStampArray"></app-timestamp>
-      </div>
-      <div class="col-sm-12 col-md-6 container-div">
-        <app-click-log [pauseCount]="pauseCount" [startCount]="startCount"></app-click-log>
-      </div>
-    </div>
-    
   </div>
+
+  <div class="log-wrapper">
+    <div class="timestamp-wrapper">
+      <app-timestamp [actionArray]="timeStampArray"></app-timestamp>
+    </div>
+
+    <div class="count-wrapper">
+      <app-click-log [pauseCount]="pauseCount" [startCount]="startCount"></app-click-log>
+    </div>
+  </div>
+
+</div>

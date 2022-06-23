@@ -1,15 +1,15 @@
 <div class="container">
-    <label for="timer-input">Enter Timer Limit:</label>
-    <input type="number" id="timer-input" [value]="timerValue" #timerInput (change)="timerValue = timerInput.value" />
-    <div>
-        <button class="btn btn-primary" (click)="timerClicked()">
-            {{ !isTimerStarted ? "Start" : "Pause" }}
-        </button>
-        <button class="btn btn-secondary" (click)="resetTimer()">Reset</button>
-    </div>
+  <label for="timer-input">Enter Timer Limit:</label>
+  <input type="number" id="timer-input" [value]="timerValue" #timerInput (change)="timerValue = timerInput.value" />
+  <div class="btn-container">
+    <button class="btn btn-primary" (click)="timerClicked()">
+      {{ !isTimerStarted ? "Start" : "Pause" }}
+    </button>
+    <button class="btn btn-secondary" (click)="resetTimer()">Reset</button>
+  </div>
 
 
-  <div class="pause-log-container custom-scroll">
+  <div class="log-container">
     <h6 *ngFor="let pause of pauseArray">Paused at {{pause.value}}</h6>
   </div>
 </div>
