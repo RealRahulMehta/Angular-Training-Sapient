@@ -1,0 +1,13 @@
+<div class="log-container">
+    <ul>
+      <li *ngFor="let action of actionArray">
+        <ng-container *ngIf="action.type === 'start'; else pauseTmpl">
+          <h6>Started at {{action.time | date: 'dd-MM-yyyy hh:mm:ss a'}}</h6>
+        </ng-container>
+        <ng-template #pauseTmpl>
+          <h6>Paused at {{action.time | date: 'dd-MM-yyyy hh:mm:ss a'}}</h6>
+        </ng-template>
+      </li>
+    </ul>
+  </div>
+  

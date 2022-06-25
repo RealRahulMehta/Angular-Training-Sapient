@@ -19,6 +19,11 @@ const routes: Routes = [
       import('./counter/counter.module').then((m) => m.CounterModule),
   },
   {
+    path: 'counter-svc',
+    loadChildren: () =>
+      import('./counter-service/counter-service.module').then((m) => m.CounterServiceModule),
+  },
+  {
     path: 'student',
     loadChildren: () =>
       import('./student/student.module').then((m) => m.StudentModule),
